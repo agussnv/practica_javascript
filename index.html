@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <script src="script.js" type="text/JavaScript"></script>
+    <title>JavaScript</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div><h1 id="nom">ATLAS HOME</h1></div>
+            <div id="navlist">
+                <ul id="test">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a onclick="cambiarFondo()"><img src="favicon/sol.png" id="cambiarColor"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="practica">
+        <input type="button" onclick="incrementar('Incrementar')" value="Incrementar">
+        <input type="button" onclick="incrementar('Desincrementar')" value="Desincrementar">
+        <br>
+        <input type="email" id="mail" placeholder="Email">
+        <input type="password" id="pass" placeholder="Password">
+        <input type="button" onclick="autenticar()" value="Iniciar sesion">
+    </section>
+    <div style="display: flex; justify-content: space-around;">
+        <div>
+            <select id="select1" onchange="cambiarPersona()">
+                <option disabled selected>Selecciona una opcion</option>
+                <option value="15">Brian</option>
+                <option value="43">Jonathan</option>
+            </select>
+            <p id="parrafo1">Índice de la opción escogida:</p><input type="text" id="text1">
+            <p id="parrafo2">Nombre de la opción escogida:</p><input type="text" id="text2">
+            <p id="parrafo3">Edad de la opción escogida:</p><input type="text" id="text3">
+        </div>
+        <div>
+            <select id="pizza">
+                <option disabled selected>Selecciona una opcion</option>
+                <option value="10€">margarita</option>
+                <option value="12€">primavera</option>
+                <option value="15€">bucaneve</option>
+            </select>
+            <input type="number" id="unidades" style="width: 30px;" value="1">
+            <input type="button" id="aumentar" onclick="aumentar()" value="+">
+            <input type="button" id="disminuir" onclick="disminuir()" value="-">
+            <input type="button" value="Calcular" onclick="cambiarPizza()">
+            <br>
+            <img src="" id="imagenPizza" style="width: 200px;">
+            <p id="precio"></p>
+            <p style="display: inline; color: white;">Precio total: <p style="display: inline;" id="total"></p></p>
+        </div>
+    </div>
+
+</body>
+</html>

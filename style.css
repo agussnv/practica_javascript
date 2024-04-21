@@ -1,0 +1,54 @@
+body{
+    background-color: #151F30;
+    margin: 0;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    margin-left: 50px;
+    font-size: 35px;
+    font-family: 'Sedan', sans-serif;
+    letter-spacing: 3px;
+}
+
+#navlist{
+    margin-right: 50px;
+}
+
+#navlist ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 50px;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+}
+
+#navlist ul li a{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+#practica{
+    margin: 20px;
+}
+
+p{
+    color: white;
+}
